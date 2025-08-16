@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    footer {
+      font-size: 0.7em;
+      color: #666;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <section>
+        <h1>📘 Product Documentation</h1>
+        <h3>For Software Engineers</h3>
+        <p><em>23f2002583@ds.study.iitm.ac.in</em></p>
+        <footer>23f2002583@ds.study.iitm.ac.in</footer>
+        <aside class="notes">
+          Introduce yourself and explain the objective of the presentation.
+        </aside>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+## 🧩 Objectives
+
+- Create maintainable product documentation <!-- .fragment -->
+- Keep it version-controlled <!-- .fragment -->
+- Convert easily to PDF, HTML, or PPT <!-- .fragment -->
+- Use Marp for beautiful presentations <!-- .fragment -->
+        </textarea>
+        <aside class="notes">
+          Explain each bullet one by one using fragment animation.
+        </aside>
+      </section>
+
+      <section>
+        <h2>🛠️ Code Example</h2>
+        <pre><code class="language-bash">
+git init
+git add slides.md
+git commit -m "Add Reveal.js version"
+        </code></pre>
+        <aside class="notes">
+          Show how easy it is to track documentation using Git.
+        </aside>
+      </section>
+
+      <section>
+        <h2>📈 Financial Formula Example</h2>
+        <p>
+          Future Value (FV) of an investment:
+        </p>
+        <p>
+          $$ FV = PV \cdot (1 + r)^n $$
+        </p>
+        <aside class="notes">
+          A classic financial formula. PV is present value, r is interest rate, n is time.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight ],
+      slideNumber: true,
+    });
+  </script>
+</body>
+</html>
